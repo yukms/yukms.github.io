@@ -1,0 +1,81 @@
+# Site Settings
+title: "Min-Sik Kim"
+description: "Personal Website of Min-Sik Kim, PostDoc in Earth and Planetary Science"
+url: "https://yukms.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Plugins (GitHub Pages whitelist only)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Jekyll processing
+safe: true
+incremental: false
+lsi: false
+
+# Liquid
+liquid:
+  error_mode: warn
+  strict_filters: false
+  strict_variables: false
+
+# Posts settings (disabled for portfolio site)
+future: false
+show_excerpts: false
+
+# Site Author
+author:
+  name: "MIN-SIK KIM"
+  bio: "PostDoc in Earth and Planetary Science at University of California, Riverside"
+  location: "Riverside, CA"
+  avatar: "/assets/images/profile.png"
+
+# Social profiles
+social:
+  type: Person
+  name: "Min-Sik Kim"
+  links: []
+
+# Navigation
+navigation:
+  main:
+    - title: "About"
+      url: "/#about"
+    - title: "Research Projects"
+      url: "/#projects"
+    - title: "Teaching & Awards"
+      url: "/#teaching-awards"
+    - title: "Contact"
+      url: "/#contact"
+
+# Page defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      show_date: false
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - node_modules/
+  - "*.gemspec"
+  - "*.gem"
+  - Rakefile
+  - CHANGELOG.md
+  - LICENSE

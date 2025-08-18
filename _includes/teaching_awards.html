@@ -1,0 +1,26 @@
+<section id="teaching-awards" class="page-section">
+    <div class="additional-info-grid">
+        <section class="teaching">
+            <h2><i class="fas fa-chalkboard-teacher"></i> Teaching & Mentoring</h2>
+            <ul class="info-list">
+                {% for item in site.data.profile.teaching %}
+                    <li class="info-item">
+                        <span class="info-title">{{ item.course }}</span>
+                        <span class="info-meta">{{ item.role }} | {{ item.institution }}, {{ item.year }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+        <section class="awards">
+            <h2><i class="fas fa-award"></i> Funding & Awards</h2>
+            <ul class="info-list">
+                {% for award in site.data.profile.awards %}
+                    <li class="info-item">
+                        <span class="info-title">{{ award.title }}</span>
+                        <span class="info-meta">{{ award.organization }}, {{ award.year }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</section>

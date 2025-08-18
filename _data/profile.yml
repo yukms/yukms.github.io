@@ -1,0 +1,153 @@
+name: "MIN-SIK KIM"
+intro: "Hi, I'm a PostDoc in Earth and Planetory Science at <a href='https://www.ucr.edu/' target='_blank'>University of California, Riverside</a>, advised by Prof. <a href='https://ericbarefoot.com/about_me.html' target='_blank'>Eric Barefoot</a>."
+profile_pic: "/assets/images/profile.png"
+
+social_links:
+  - icon: "fas fa-graduation-cap"
+    url: "https://scholar.google.co.kr/citations?user=F1WpIncAAAAJ&hl=ko"
+  - icon: "fab fa-researchgate"
+    url: "https://www.researchgate.net/profile/Minsik-Kim-16?ev=hdr_xprf"
+  - icon: "fas fa-file-alt"
+    url: "https://drive.google.com/file/d/1ItORZ7GAwBxxZhu_p9_m8oBa9iLIRTVW/view?usp=sharing"
+
+contact:
+  email: "yukms6601@yonsei.ac.kr"
+  phone: "+82-10-5674-6601"
+  address: "50. Yonsei-ro, Seodaemun-gu, Seoul, Republic of Korea"
+
+research_interests:
+  - "Delta Morphodynamics"
+  - "Earth Surface Process"
+
+experience:
+  - title: "Postdoctoral Scholar"
+    institution: "<a href='https://www.ucr.edu/' target='_blank'>University of California, Riverside</a>"
+    duration: "2025 - Present"
+
+education:
+  - degree: "PhD in Earth System Sciences, 2025"
+    school: "<a href='https://www.yonsei.ac.kr' target='_blank'>Yonsei University</a>"
+    advisor: "Advisor(s): <a href='https://www.morphodynamics.org/' target='_blank'>Wonsuck Kim</a> (Yonsei) & <a href='https://jhnienhuis.github.io/' target='_blank'>Jaap Nienhuis</a> (Utrecht)"
+  - degree: "BSc in Earth System Sciences, 2020"
+    school: "<a href='https://www.yonsei.ac.kr' target='_blank'>Yonsei University</a>"
+
+# ======================================================
+# 1. 논문(Publications) 목록
+# ======================================================
+publications:
+  - id: "bre12684"
+    info: "Kim, M., Kim, W., & Nahm, W-H. (2022). The effect of bottomset on fluviodeltaic land-building process: Numerical modelling and physical experiment. Basin Research, 34, 1763-780. (DOI: 10.1111/bre.12684)"
+    links:
+      - { name: "Google Scholar", url: "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=F1WpIncAAAAJ&citation_for_view=F1WpIncAAAAJ:9yKSN-GCB0IC", icon: "fas fa-graduation-cap" }
+      - { name: "GitHub", url: "https://github.com/yukms/DeltaBuildingModel-Bottomset-Included-", icon: "fab fa-github" }
+
+  - id: "sed13230"
+    info: "Kim, M., Chun, B., Chamberlain, E. and Kim, W. (2024). Enhanced mud retention as an autogenic mechanism for sustained delta growth: Insight from records of the Lafourche subdelta of the Mississippi River. Sedimentology. (DOI: 10.1111/sed.13230)"
+    links:
+      - { name: "Google Scholar", url: "https://scholar.google.co.kr/citations?view_op=view_citation&hl=ko&user=F1WpIncAAAAJ&citation_for_view=F1WpIncAAAAJ:Y0pCki6q_DkC", icon: "fas fa-graduation-cap" }
+      - { name: "GitHub", url: "https://github.com/yukms/DeltaBuildingModel-Enhanced-mud-retention-", icon: "fab fa-github" }
+
+  - id: "pub3"
+    info: "(in prep) A quantitative investigation on sediment retention fraction in delta topset"
+    links:
+      - { name: "Google Scholar", url: "#", icon: "fas fa-graduation-cap" }
+
+  - id: "kim2025a"
+    info: "Kim, W., Lee, J., Lee, Y., Kim, M., and Shin, H., 2024, A coupled model for rift basin evolution: Interactions of tectonics, sea-level cycle, and sediment network: Journal of Sedimentary Research (in review)"
+    links: []
+
+  - id: "kim2025b"
+    info: "Kim, W., Kim, M., Zhou, C., Zhang, Z., Yuan, X., Zhang, J., Olariu, C., Steel, R., and Strom, K., 2024, Flocculation, Gravity flows, and Total Organic Carbon Hotspots: Journal of Sedimentary Research, (in review)"
+    links: []
+
+  - id: "nahm2024"
+    info: "Nahm, W., Kim, W., Kim, M., Park, BS., Han, M., Kim, S., Lim, HS., Choi,, J., Jun, C. (2024). The potential of Municipal Solid Waste (MSW) layers as Anthropocene strata. Episodes, 47, 179-186."
+    links:
+      - { name: "DOI", url: "https://doi.org/10.18814/epiiugs/2023/02333", icon: "fas fa-link" }
+
+  - id: "wu2023"
+    info: "Wu, C., Kim, M., & Kim, W. (2023). Natural levees increase in prevalence in the backwater zone: Coastal Trinity River, Texas, USA: COMMENT. Geology, 51(6), e564-e564."
+    links:
+      - { name: "DOI", url: "https://doi.org/10.1130/G51212C.1", icon: "fas fa-link" }
+
+  - id: "kim2023"
+    info: "Kim, M., Shin, H., Nahm, W. H., & Kim, W. (2023). Dynamic Equilibrium Position Prediction Model for the Confluence Area of Nakdong River. Economic and Environmental Geology, 56(4), 435-445."
+    links:
+      - { name: "DOI", url: "https://doi.org/10.9719/EEG.2023.56.4.435", icon: "fas fa-link" }
+
+# ======================================================
+# 2. 연구 프로젝트(Research Projects) 목록
+# ======================================================
+research_projects:
+  - title: "Delta Morphodynamics and Restoration"
+    description: "This project focuses on the numerical and physical modeling of delta formation processes, including the significant role of bottomset beds and enhanced mud retention in topset."
+    sub_projects:
+      - title: "1. Effect of delta bottomset on deltaic land building"
+        publication_ids: [ "bre12684" ]
+      - title: "2. Enhanced mud retention and sustained delta growth"
+        publication_ids: [ "sed13230" ]
+      - title: "3. Quantitative investigation on sediment retention fraction: Delft3D"
+        publication_ids: []
+
+  - title: "Meandering River Dynamics"
+    description: "This project investigates the dynamics of meandering rivers and levees."
+    sub_projects:
+      - title: "1. Levee prevalence in backwater zones"
+        publication_ids: [ "wu2023" ]
+      - title: "2. Cutoff dynamics in meandering rivers"
+        publication_ids: [ ]
+
+
+  - title: "Exploratory projects"
+    description: "Exploratory"
+    sub_projects:
+      - title: "1. Antropocence"
+        publication_ids: ["nahm2024"]
+      - title: "2. Rift basin filling model"
+        publication_ids: ["kim2025a"]
+      - title: "3. Flocculation experiment"
+        publication_ids: ["kim2025b"]
+      - title: "2. River confluence delta's dynamic equilibrium"
+        publication_ids: [ "kim2023" ]
+
+
+# ======================================================
+# 3. teaching and award
+# ======================================================
+
+teaching:
+  - course: "Teaching Assistant"
+    role: "Led lab sections and exercises for 'Understanding of Stratigraphy' and 'Introduction to Earth System Sciences'."
+    institution: "Yonsei University"
+    year: "2020"
+  - course: "Undergraduate Thesis Mentoring"
+    role: "Mentored students on experimental and analytical research projects on deltaic and coastal processes."
+    institution: "Yonsei University"
+    year: "2020, 2021"
+
+awards:
+  - title: "Sejong Science Fellowship International Postdoctoral Track (Selected, declined)"
+    organization: "Korea Government"
+    year: "2025"
+  - title: "IAS Postgraduate Research Grant"
+    organization: "International Association of Sedimentologists"
+    year: "2023-2024"
+  - title: "Merit Academic Paper Award"
+    organization: "Dept. of Earth System Sciences, Yonsei University"
+    year: "2024"
+  - title: "Convergence Research Proposal, 1st Award"
+    organization: "Dept. of Earth System Sciences, Yonsei University"
+    year: "2020"
+  - title: "Promising Geological Engineering Award"
+    organization: "Engineering Geology Academy, Korea"
+    year: "2019"
+
+main:
+  - title: "About"
+    url: /about/
+  - title: "Research Projects"
+    url: /projects/
+  - title: "Teaching & Awards"
+    url: /teaching/
+  - title: "Contact"
+    url: /contact/

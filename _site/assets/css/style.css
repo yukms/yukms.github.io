@@ -1,0 +1,676 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* 세로 정렬을 위해 추가 */
+    align-items: center; /* 가로 중앙 정렬 */
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+}
+
+/* --- 프로필 헤더 --- */
+.profile-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.profile-header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.intro {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.intro a {
+    color: #333;
+    font-weight: 500;
+}
+.social-links {
+    margin-top: 15px;
+}
+.social-links a {
+    font-size: 24px;
+    color: #555;
+    margin: 0 10px;
+}
+
+/* --- 콘텐츠 그리드 --- */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: left;
+    margin-bottom: 60px;
+}
+.content-grid h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+.content-grid h2 i {
+    margin-right: 8px;
+    color: #555;
+}
+.content-grid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+}
+.content-grid li {
+    margin-bottom: 15px;
+}
+.duration {
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Education 섹션 스타일 */
+.education-item {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.education-item:last-child {
+    border-bottom: none;
+}
+.education-item p { margin: 4px 0; }
+.degree { font-weight: bold; }
+.school a {
+    color: #333; /* 링크 색상을 기본 글자색으로 변경 */
+}
+.advisor {
+    font-size: 0.9em;
+    color: #666;
+    padding-left: 10px;
+    border-left: 2px solid #eee;
+}
+.advisor a {
+    color: #666; /* 링크 색상을 advisor 글자색으로 변경 */
+}
+/* Research Interests 태그 스타일 */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.tag {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* --- 추가 정보 그리드 (Teaching, Awards) --- */
+.additional-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2개의 컬럼으로 나눔 */
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.additional-info-grid h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.additional-info-grid h2 i {
+    margin-right: 8px;
+    color: #555;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-item {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.info-title {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.info-meta {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* --- 리서치 프로젝트 --- */
+.projects-section { 
+    width: 100%; 
+    text-align: left; 
+    margin-bottom: 60px;
+}
+
+.projects-section h2 { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2d3748;
+}
+
+.projects-section h2 i {
+    margin-right: 15px;
+    color: #667eea;
+    font-size: 0.9em;
+}
+
+.section-description {
+    font-size: 1.1em;
+    color: #718096;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    font-style: italic;
+    text-align: center;
+}
+
+.projects-list { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+/* --- 펼치기/접기 카드 스타일 --- */
+.project-main-item details {
+    background-color: #ffffff;
+    padding: 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.project-main-item:hover details {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.project-main-item summary {
+    cursor: pointer;
+    list-style: none; /* 기본 화살표 아이콘 제거 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    transition: background 0.3s ease;
+}
+
+.project-main-item summary:hover {
+    background: linear-gradient(135deg, #edf2f7 0%, #e2e8f0 100%);
+}
+
+.project-main-item summary::-webkit-details-marker {
+    display: none; /* 기본 화살표 아이콘 제거 (Safari) */
+}
+
+.project-main-title {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.4em;
+    margin: 0;
+    color: #2d3748;
+}
+
+.project-main-title i {
+    margin-right: 12px;
+    color: #667eea;
+    font-size: 0.8em;
+}
+
+/* --- 펼치기/접기 아이콘 (+/-) --- */
+.project-main-item summary::after {
+    content: '+'; /* 닫혔을 때 아이콘 */
+    font-size: 2em;
+    font-weight: 300;
+    color: #aaa;
+    transition: transform 0.2s;
+}
+.project-main-item details[open] summary::after {
+    content: '−'; /* 열렸을 때 아이콘 */
+    transform: rotate(180deg);
+}
+
+/* --- 펼쳐지는 하위 내용 스타일 --- */
+.sub-projects-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0 0;
+    border-top: 2px solid #f0f0f0;
+}
+.sub-project-item {
+    padding: 25px 30px 0 30px;
+}
+
+.sub-project-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sub-project-header i {
+    margin-right: 10px;
+    color: #764ba2;
+    font-size: 0.9em;
+}
+
+.sub-project-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 0;
+    color: #2d3748;
+}
+.project-description, .publication-info { /* 공통 스타일 */
+    font-size: 0.95em;
+    color: #555;
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+}
+
+/* --- 논문 정보 및 링크 스타일 (기존과 유사) --- */
+.related-publications strong {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.related-publications strong i {
+    margin-right: 8px;
+    color: #667eea;
+    font-size: 1.1em;
+}
+.related-publications ul {
+    list-style: none;
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+.publication-info {
+    font-size: 0.95em;
+    color: #555;
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+}
+
+/* --- 전체 링크 스타일 --- */
+a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* --- 아이콘이 포함된 링크의 세부 스타일 --- */
+.social-links a {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.project-links a {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 0.9em;
+}
+
+/* 아이콘 스타일 */
+.social-links a i,
+.project-links a i {
+    color: #888;
+    margin-right: 5px;
+    transition: color 0.2s;
+}
+
+/* 아이콘 hover 효과 */
+.social-links a:hover i,
+.project-links a:hover i {
+    color: #007bff;
+}
+
+
+/* --- 섹션 구분선 --- */
+.section-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #e2e8f0, transparent);
+    margin: 60px 0;
+    position: relative;
+}
+
+.section-divider::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 2px;
+}
+
+/* 모바일에서 구분선 간격 조정 */
+@media (max-width: 600px) {
+    .section-divider {
+        margin: 40px 0;
+    }
+}
+.site-footer {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* --- 반응형 디자인 --- */
+
+/* 태블릿 - 2열 레이아웃 (768px ~ 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    .additional-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+/* 작은 태블릿 - 2열 레이아웃 (600px ~ 768px) */
+@media (max-width: 768px) and (min-width: 601px) {
+    .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .additional-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .main-content {
+        padding: 60px 30px;
+    }
+}
+
+/* 모바일 - 1열 레이아웃 (600px 이하) */
+@media (max-width: 600px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .additional-info-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .main-content {
+        padding: 50px 20px;
+    }
+}
+
+
+
+/* --- 우측 고정 내비게이션 (밝은 반투명 스타일) --- */
+.right-nav {
+    position: fixed;
+    top: 30px;
+    right: 0;
+    z-index: 2000;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 15px 0 0 15px;
+    box-shadow: -6px 0 25px rgba(0, 0, 0, 0.08);
+    padding: 15px 0 15px 10px;
+    min-width: 85px;
+    transform: scale(0.6) translateX(0);
+    transform-origin: top right;
+    transition: all 0.3s ease;
+}
+
+.right-nav:hover {
+    transform: scale(0.6) translateX(-5px);
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: -10px 0 35px rgba(0, 0, 0, 0.12);
+}
+
+.right-nav .skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.right-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.right-nav li {
+    margin-bottom: 6px;
+}
+
+.right-nav li:last-child {
+    margin-bottom: 0;
+}
+
+.right-nav a {
+    display: block;
+    padding: 10px 15px 10px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #4a5568;
+    text-decoration: none;
+    text-align: left;
+    transition: all 0.3s ease;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.right-nav a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.right-nav a:hover,
+.right-nav a:focus {
+    background: rgba(102, 126, 234, 0.1);
+    color: #5a67d8;
+    transform: translateX(-6px);
+    box-shadow: -4px 0 15px rgba(102, 126, 234, 0.15);
+}
+
+.right-nav a:hover::before,
+.right-nav a:focus::before,
+.right-nav a.active::before {
+    transform: scaleY(1);
+}
+
+.right-nav a.active {
+    background: rgba(102, 126, 234, 0.15);
+    color: #5a67d8;
+    font-weight: 600;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .right-nav {
+        top: 20px;
+        min-width: 75px;
+        padding: 12px 0 12px 8px;
+        transform: scale(0.55) translateX(0);
+        background: rgba(255, 255, 255, 0.8);
+    }
+    
+    .right-nav:hover {
+        transform: scale(0.55) translateX(-3px);
+    }
+    
+    .right-nav a {
+        padding: 8px 12px 8px 10px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .right-nav {
+        top: 15px;
+        min-width: 70px;
+        padding: 10px 0 10px 6px;
+        transform: scale(0.5) translateX(0);
+        background: rgba(255, 255, 255, 0.85);
+    }
+    
+    .right-nav:hover {
+        transform: scale(0.5) translateX(-2px);
+    }
+    
+    .right-nav a {
+        padding: 6px 10px 6px 8px;
+        font-size: 12px;
+    }
+}
+
+/* Hide Posts and Archives */
+.archive__subtitle,
+.list__item,
+.entries-list,
+.taxonomy__section,
+.archive,
+h3.archive__subtitle {
+    display: none !important;
+}
+
+/* Hide any leftover follow button if present */
+.btn.btn--inverse,
+button[aria-label="Follow"] {
+    display: none !important;
+}
+
+/* --- 메인 콘텐츠와 섹션 --- */
+.main-content {
+    width: 100%;
+}
+.page-section {
+    padding-top: 50px; /* 내비게이션 클릭 시 헤더에 가려지지 않도록 여백 추가 */
+}
+
+
+
+/* --- Contact 섹션 --- */
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    margin-top: 60px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    width: 100vw;
+}
+.contact-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-content h2 {
+    margin-bottom: 30px;
+}
+.contact-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* 내용만큼만 너비 차지 (중앙 정렬에 중요) */
+    text-align: left;    /* 목록 내 텍스트는 왼쪽 정렬 */
+}
+.contact-content li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+.contact-content li i {
+    margin-right: 15px;
+    width: 20px;
+    color: #555;
+}
+/* optional map block, uncomment and adjust selector if you add a map element */
+/*
+.map {
+    height: 350px;
+    border-radius: 8px;
+}
+*/
+
+/* smooth scroll to anchors */
+html { scroll-behavior: smooth; }

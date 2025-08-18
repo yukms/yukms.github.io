@@ -1,0 +1,17 @@
+<section id="contact" class="contact-section">
+    <div class="contact-content">
+        <h2><i class="fas fa-phone-alt"></i> Contact</h2>
+        <div class="contact-info">
+            <p>
+                <i class="fas fa-envelope"></i> 
+                <a href="mailto:{{ site.data.profile.contact.email }}">{{ site.data.profile.contact.email }}</a>
+            </p>
+            <p>
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="https://maps.google.com/?q={{ site.data.profile.contact.address | url_encode }}" target="_blank">
+                    {{ site.data.profile.contact.address }}
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
